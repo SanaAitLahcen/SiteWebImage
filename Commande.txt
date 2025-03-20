@@ -1,0 +1,2 @@
+docker build -t mon-app-images .  //Construisez l'image
+docker run -p 3000:3000 mon-app-images //Lancez le conteneur :

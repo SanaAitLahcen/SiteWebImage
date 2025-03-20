@@ -33,7 +33,8 @@ app.get('/', async (req, res) =>
         console.log(images);
         res.render('index', { images });
 
-    } catch (error) {
+    } catch (error) 
+    {
         console.error("❌ Erreur lors de la récupération des images :", error);
         res.status(500).send('❌ Erreur lors de la récupération des images');
     }
