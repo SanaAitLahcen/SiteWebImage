@@ -1,2 +1,9 @@
 docker build -t mon-app-images .  //Construisez l'image
-docker run -p 3000:3000 mon-app-images //Lancez le conteneur :
+docker run -p 3000:3000 mon-app-images //Lancez le conteneur
+
+
+docker exec -it imageprojet-mongodb-1 mongosh // Connectez-vous au conteneur MongoDB
+on a deux types de communication : communication réseau et communication logique 
+ImageDB> show collections
+photos
+ImageDB> db.photos.find()
